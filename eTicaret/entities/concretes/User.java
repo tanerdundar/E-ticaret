@@ -1,26 +1,27 @@
-package video5.odev.entities.concretes;
+package video5.odevTekrar.eTicaret.entities.concretes;
 
-import video5.odev.entities.abstracts.Entity;
+import video5.odevTekrar.eTicaret.entities.abstracts.UserEntity;
 
-public class User implements Entity{
+public class User implements UserEntity{
 	
 	private int id;
 	private String firstName;
 	private String lastName;
-	private String eMail;
 	private String password;
+	private String eMail;
 	
-	public User () {
+	
+	public User() {
 		
 	}
 
-	public User(int id, String firstName, String lastName, String eMail, String password) {
+	public User(int id, String firstName, String lastName, String password, String eMail) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.eMail = eMail;
 		this.password = password;
+		this.eMail = eMail;
 	}
 
 	public int getId() {
@@ -47,14 +48,6 @@ public class User implements Entity{
 		this.lastName = lastName;
 	}
 
-	public String geteMail() {
-		return eMail;
-	}
-
-	public void seteMail(String eMail) {
-		this.eMail = eMail;
-	}
-
 	public String getPassword() {
 		return password;
 	}
@@ -62,6 +55,14 @@ public class User implements Entity{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String geteMail() {
+		return eMail;
+	}
+
+	public void seteMail(String eMail) {
+		this.eMail = eMail;
+	}
 	
-	
+
 }
